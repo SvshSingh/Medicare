@@ -1,0 +1,41 @@
+.wrapper{
+    width: 40%;
+    margin: auto;
+    margin-top: 40px;
+    transition: 0.5s ease-in-out;
+}
+
+.body { 
+    min-height: 92vh;
+}
+
+.formSection {
+    display: block;
+    height: 560px;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    /* border: 2px solid black; */
+}
+
+.formSection::-webkit-scrollbar {
+    display: none;
+}
+.cardSection {
+    overflow-y: hidden;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .wrapper{
+        width: 90%;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .wrapper{
+        width: 60%;
+        margin: auto;
+    }
+}

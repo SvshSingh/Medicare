@@ -1,0 +1,77 @@
+.wrapper {
+    width: 60%;
+    margin: auto;
+}
+
+.border{
+    border: 1px solid white;
+    display: block;
+}
+
+.fab{
+    position: fixed;
+    left: 80%;
+    top: 80%;
+    /* bottom: 30px;
+    right: 20px; */
+}
+
+.container{
+    width: 100%;
+}
+
+.searchArea{
+    position: fixed;
+}
+.body{
+    min-height: 100vh;
+}
+
+@media only screen and (max-width: 600px) {
+    .wrapper{
+        width: 90%;
+        margin: auto;
+    }
+  }
+
+  .leftOption {
+    max-height: 85vh;
+    overflow-y: scroll;
+    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+    padding-bottom: 20px;
+  }
+
+  .leftOption::-webkit-scrollbar {
+    display: none;
+}
+  .rightPanel::-webkit-scrollbar {
+    display: none;
+}
+
+.rightPanel{
+    max-height: 78vh;
+    min-height: 78vh;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.overlay {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    /* background-color: black; */
+    background: rgba(0,0,0,0.8);
+    backdrop-filter: saturate(100%) blur(10px);
+    display: flex;
+    justify-content: center;
+}
+.card {
+    height: 200px;
+    width: 450px;
+    border-radius: 10px;
+    margin-top: 70px;
+    background-color: white;
+}
